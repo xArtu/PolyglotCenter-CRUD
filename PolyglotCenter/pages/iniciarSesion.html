@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/normalize.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <title>Iniciar sesión</title>
+</head>
+<body class="bg">
+    <main class="contenedor-medio main">
+        <h1 class="center" style="color:white">Iniciar sesión</h1>
+        <form action="../php/validarSesion.php" method="post" class="formulario">
+ 
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Escribe tu correo electrónico">
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required placeholder="********">
+    
+            <div class="sesion-registro">
+                <button type="submit" class="btn-registro">Iniciar sesión</button>
+                <a href="registro.html">Registrarse</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

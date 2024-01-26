@@ -1,0 +1,267 @@
+:root{
+    --primario: #0075db;
+    --secundario: #f7ca18;
+    --oscuro: #001f3d;
+    --claro: #ffffff;
+    --btn: #0a99c5; 
+}
+html{
+    box-sizing: border-box;  
+    font-size: 62.5%; 
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+h1, h2, h3, p, a{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+p, a{
+    font-size: 1.6rem;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.contenedor-medio{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.contenedorNavegacion{
+    color: var(--claro);
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo{
+    margin: 1rem;
+    padding-left: 4rem;
+}
+.opciones{
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.link{
+    color: var(--claro);
+    font-size: 2rem;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.sesion{
+    margin: 1rem;
+    padding-right: 4rem;
+}
+.contenedor-sobreNosotros{
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.sobreNosotros-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.sobreNosotros-info h2, .sobreNosotros-info a{
+    text-align: center;
+}
+.btn-enlace{
+    color: var(--claro);
+    font-weight: bold;
+    background-color: var(--primario);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.btn-enlace:hover{
+    background-color: var(--btn);
+}
+.mt-5{
+    margin-top: 5rem;
+}
+.center{
+    text-align: center;
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card img{
+    border-bottom: solid 2px var(--oscuro);
+    border-radius: 1.5rem;
+}
+.card{
+    background-color: var(--secundario);
+    border: solid 2px var(--oscuro);
+    border-radius: 2rem;
+}
+.contenido{
+    padding: 2rem;
+}
+.contenido h3{
+    text-align: center;
+}
+.contenido p{
+    margin-bottom: 1.5rem;
+}
+.btn-info{
+    color: var(--claro);
+    font-weight: bold;
+    background-color: var(--primario);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.btn-info:hover{
+    background-color: var(--btn);
+}
+.slogan{
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.contenedor-registro{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    gap: .5rem;
+}
+.formulario label{
+    font-weight: bold;
+    padding: .5rem 0;
+    color: var(--claro);
+}
+.formulario input, .formulario select, .formulario textarea{
+    border: solid 2px var(--secundario);
+    padding: .5rem;
+}
+.formulario button{
+    margin-top: 2rem
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg{
+    background-color: var(--btn);
+}
+.btn-registro{
+    color: var(--claro);
+    font-weight: bold;
+    background-color: var(--secundario);
+    padding: 1rem;
+}
+.btn-registro:hover{
+    filter: brightness(95%);
+}
+.sesion-registro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sesion-registro a{
+    color: var(--claro);
+}
+.sesion-registro a:hover{
+    text-decoration: underline;
+}
+.texto{
+    font-size: 1.8rem;
+}
+.card-curso{
+    background-color: var(--oscuro);
+    color: var(--claro);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.contenedor-admin{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primario);
+    text-align: center;
+    padding: 1rem 0;
+}
+.listado{
+    font-size: 2rem;
+   border-collapse: collapse;
+   width: 100%; 
+}
+.listado th{
+    background-color: var(--secundario);
+}
+.listado th, .listado td{
+    border: 1px solid var(--oscuro);
+    padding: 1.5rem;
+}
+th, td{
+    font-size: 2rem;
+}
+.listado td{
+    background-color: #cacaca;
+}
+.listado .editar{
+    background-color: #0084ff;
+    text-align: center;
+}  
+.listado .eliminar{
+    background-color: #dd0000;
+    text-align: center;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--secundario);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.sesion:hover .submenu {
+    display: block;
+    background-color: var(--secundario);
+}
+.table{
+    width: 100%;
+}
+.table th, .table td{
+    border: solid 1px var(--oscuro);
+    padding: 1.1rem;
+    text-align: center;
+}
+.table th{
+    background-color: var(--secundario);
+}

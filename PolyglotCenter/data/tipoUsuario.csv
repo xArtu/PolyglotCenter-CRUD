@@ -1,0 +1,8 @@
+Nombre;Apellido1;Apellido2;Correo;Contrasena;Rol
+Admin,Admin,Admin,admin@gmail.com,admin,admin
+Arturo,Rojas,Cervantes,arturorojascerv@gmail.com,profesor1,profesor
+Paulo,Lino,Hernandez,paulolino@gmail.com,contra1,alumno
+Luis,Díaz,Rojas,luis123@gmail.com,profesor1234,profesor
+Paco,Francisco,Vega,paco@gmail.com,alumno12,alumno
+Jose,Vazquez,Portuguez,jose@gmail.com,profesorre,profesor
+PROBANDO,PROBANDO,PROBANDO,probando@gmail.com,PROBANDO,alumno
